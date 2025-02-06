@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Numeral Converter</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Numeral Converter</h1>
+    <input [(ngModel)]="inputNumeral"/>
+    <button (click)="convertNumeralToNumber()">Convert</button>
+    <div *ngIf="convertedNumber !== null">
+      <p>Converted Number: {{ convertedNumber }}</p>
+    </div>
+  </div>
+</body>
+</html>
